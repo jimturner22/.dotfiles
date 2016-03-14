@@ -12,6 +12,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'quramy/tsuquyomi'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'lokaltog/vim-powerline'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -28,5 +30,26 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+syntax enable
 set number
+
+set t_Co=256
 set background=dark
+if !has('gui_running')
+    let g:solarized_termcolors=&t_Co
+    let g:solarized_termtrans=1
+endif
+colorscheme solarized
+
+set laststatus=2
+
+set tabstop=4 " number of visual spaces per TAB
+set softtabstop=4 " number of spaces in tab when editing
+set expandtab " tabs are spaces
+set showcmd " show command in bottom bar
+
+set wildmenu " visual autocomplete for command menu ?
+set showmatch 
+
+set incsearch
+set hlsearch
