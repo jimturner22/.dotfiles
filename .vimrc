@@ -17,6 +17,7 @@ Plugin 'quramy/tsuquyomi'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'lokaltog/vim-powerline'
 Plugin 'elzr/vim-json'
+Plugin 'mustache/vim-mustache-handlebars'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
