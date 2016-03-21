@@ -10,10 +10,13 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
+Plugin 'Shougo/vimproc.vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'quramy/tsuquyomi'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'lokaltog/vim-powerline'
+Plugin 'elzr/vim-json'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
