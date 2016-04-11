@@ -18,6 +18,7 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'lokaltog/vim-powerline'
 Plugin 'elzr/vim-json'
 Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'qpkorr/vim-bufkill'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -45,6 +46,7 @@ if !has('gui_running')
 endif
 colorscheme solarized
 
+
 set laststatus=2
 
 set tabstop=4 " number of visual spaces per TAB
@@ -57,3 +59,10 @@ set showmatch
 
 set incsearch
 set hlsearch
+
+" JSON syntax highlighting
+" Turn off quote concealing
+let g:vim_json_syntax_conceal = 0
+
+:nnoremap <F5> :buffers<CR>:buffer<Space>
+
