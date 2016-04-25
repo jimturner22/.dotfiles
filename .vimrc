@@ -10,7 +10,9 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-fugitive'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'quramy/tsuquyomi'
@@ -43,6 +45,8 @@ set background=dark
 if !has('gui_running')
     let g:solarized_termcolors=&t_Co
     let g:solarized_termtrans=1
+    let g:solarized_contrast="high"
+    let g:solarized_visibility="low" " for tab/new-line contrast
 endif
 colorscheme solarized
 
@@ -59,10 +63,18 @@ set showmatch
 
 set incsearch
 set hlsearch
+set ignorecase
+set smartcase
+
+set paste
 
 " JSON syntax highlighting
 " Turn off quote concealing
 let g:vim_json_syntax_conceal = 0
 
-:nnoremap <F5> :buffers<CR>:buffer<Space>
+" set statusline=%{fugitive#statusline()}
+
+autocmd FileType typescript nmap <buffer> <Leader>t : <C-u>echo tsuquyomi#hint()<CR>
+
+nnoremap <F5> :buffers<CR>:buffer<Space>
 
