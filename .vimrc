@@ -21,6 +21,7 @@ Plugin 'lokaltog/vim-powerline'
 Plugin 'elzr/vim-json'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'qpkorr/vim-bufkill'
+Plugin 'pprovost/vim-markdown-jekyll'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -67,6 +68,7 @@ set ignorecase
 set smartcase
 
 set paste
+set colorcolumn=100
 
 " JSON syntax highlighting
 " Turn off quote concealing
