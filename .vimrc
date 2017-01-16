@@ -13,6 +13,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'quramy/tsuquyomi'
@@ -22,6 +23,8 @@ Plugin 'elzr/vim-json'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'qpkorr/vim-bufkill'
 Plugin 'pprovost/vim-markdown-jekyll'
+Plugin 'tpope/vim-surround'
+Plugin 'scrooloose/syntastic'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -77,6 +80,9 @@ let g:vim_json_syntax_conceal = 0
 " set statusline=%{fugitive#statusline()}
 
 autocmd FileType typescript nmap <buffer> <Leader>t : <C-u>echo tsuquyomi#hint()<CR>
+let g:tsuquyomi_disable_quickfix = 1
+let g:syntastic_typescript_checkers = ['tsuquyomi'] " You shouldn't use 'tsc' checker.
 
 nnoremap <F5> :buffers<CR>:buffer<Space>
 
+let g:nerdtree_tabs_open_on_console_startup=1
