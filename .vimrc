@@ -25,6 +25,7 @@ Plugin 'qpkorr/vim-bufkill'
 Plugin 'pprovost/vim-markdown-jekyll'
 Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/syntastic'
+Plugin 'Chiel92/vim-autoformat'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
