@@ -26,6 +26,7 @@ Plugin 'pprovost/vim-markdown-jekyll'
 Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/syntastic'
 Plugin 'Chiel92/vim-autoformat'
+Plugin 'moll/vim-bbye'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -86,5 +87,4 @@ let g:tsuquyomi_disable_quickfix = 1
 let g:syntastic_typescript_checkers = ['tsuquyomi'] " You shouldn't use 'tsc' checker.
 
 nnoremap <F5> :buffers<CR>:buffer<Space>
-
 let g:nerdtree_tabs_open_on_console_startup=1
