@@ -54,7 +54,7 @@ if !has('gui_running')
     let g:solarized_contrast="high"
     let g:solarized_visibility="low" " for tab/new-line contrast
 endif
-colorscheme solarized
+colorscheme sol-bright
 
 
 set laststatus=2

@@ -300,22 +300,22 @@ elseif g:solarized_termcolors != 256 && &t_Co >= 16
     let s:green       = "2"
 elseif g:solarized_termcolors == 256
     let s:vmode       = "cterm"
-    let s:base03      = "234"
-    let s:base02      = "235"
-    let s:base01      = "239"
-    let s:base00      = "240"
-    let s:base0       = "244"
-    let s:base1       = "245"
-    let s:base2       = "187"
-    let s:base3       = "230"
-    let s:yellow      = "136"
-    let s:orange      = "166"
-    let s:red         = "124"
-    let s:magenta     = "125"
-    let s:violet      = "61"
-    let s:blue        = "33"
-    let s:cyan        = "37"
-    let s:green       = "64"
+    let s:base03      = "234" "234
+    let s:base02      = "235" "235
+    let s:base01      = "239" "239
+    let s:base00      = "240" "240
+    let s:base0       = "249" "244
+    let s:base1       = "250" "245
+    let s:base2       = "229" "187
+    let s:base3       = "015" "230
+    let s:yellow      = "136" "136
+    let s:orange      = "208" "166
+    let s:red         = "160" "124
+    let s:magenta     = "162" "125
+    let s:violet      = "104" "61
+    let s:blue        = "039" "33
+    let s:cyan        = "044" "37
+    let s:green       = "040" "64
 else
     let s:vmode       = "cterm"
     let s:bright      = "* term=bold cterm=bold"
