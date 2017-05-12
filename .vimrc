@@ -86,5 +86,7 @@ autocmd FileType typescript nmap <buffer> <F2> <Plug>(TsuquyomiRenameSymbol)
 let g:tsuquyomi_disable_quickfix = 1
 let g:syntastic_typescript_checkers = ['tsuquyomi'] " You shouldn't use 'tsc' checker.
 
+set wildignore+=node_modules/**/*
+
 nnoremap <F5> :buffers<CR>:buffer<Space>
 let g:nerdtree_tabs_open_on_console_startup=1
