@@ -229,7 +229,7 @@ hi clear
 if exists("syntax_on")
   syntax reset
 endif
-let colors_name = "solarized"
+let colors_name = "sol-bright"
 
 "}}}
 " GUI & CSApprox hexadecimal palettes"{{{
@@ -1003,7 +1003,7 @@ augroup SolarizedHiTrail
     autocmd!
     if g:solarized_hitrail==1
         autocmd! Syntax * call s:SolarizedHiTrail()
-        autocmd! ColorScheme * if g:colors_name == "solarized" | call s:SolarizedHiTrail() | else | augroup! s:SolarizedHiTrail | endif
+        autocmd! ColorScheme * if g:colors_name == "sol-bright" | call s:SolarizedHiTrail() | else | augroup! s:SolarizedHiTrail | endif
     endif
 augroup END
 " }}}
@@ -1034,7 +1034,7 @@ function! SolarizedMenu()
     endif
     let g:loaded_solarized_menu = 1
 
-    if g:colors_name == "solarized" && g:solarized_menu != 0
+    if g:colors_name == "sol-bright" && g:solarized_menu != 0
 
         amenu &Solarized.&Contrast.&Low\ Contrast        :let g:solarized_contrast="low"       \| colorscheme solarized<CR>
         amenu &Solarized.&Contrast.&Normal\ Contrast     :let g:solarized_contrast="normal"    \| colorscheme solarized<CR>
@@ -1087,7 +1087,7 @@ function! SolarizedMenu()
     endif
 endfunction
 
-autocmd ColorScheme * if g:colors_name != "solarized" | silent! aunmenu Solarized | else | call SolarizedMenu() | endif
+autocmd ColorScheme * if g:colors_name != "sol-bright" | silent! aunmenu Solarized | else | call SolarizedMenu() | endif
 
 "}}}
 " License "{{{
