@@ -16,4 +16,6 @@ cd ~/.vim/bundle/vimproc.vim
 
 make
 
+cd ~/.dotfiles
+
 vim -c PluginInstall
